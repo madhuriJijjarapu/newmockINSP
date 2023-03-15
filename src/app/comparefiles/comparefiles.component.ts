@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, UntypedFormControl, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { map, startWith } from 'rxjs';
 import { HttpService } from '../http.service';
@@ -27,7 +27,7 @@ export class ComparefilesComponent implements OnInit {
   isLoader = false;
   filteredList1: any;
   msadService: any;
-  myControl = new FormControl();
+  myControl = new UntypedFormControl();
   constructor(private httpService: HttpService, private snackBar: MatSnackBar, private adalSvc: MsAdalAngular6Service) {
     // this.filteredList1 = this.factoryList.slice();
 
