@@ -1,0 +1,16 @@
+<div class="loginBg">
+    <!-- <img src="assets/Images/cbtlogo.png" class="logoImg"> -->
+    <h2 class='text-head'>INSPECTION PLANNING</h2>
+
+    <mat-card class='login-card'>
+        <mat-card-content class="card-content">
+            <p class="msad-login-message">{{ isLoggedIn ? 'Logged in using Microsoft account, please continue' : 'Please
+                login
+                with your Microsoft account'}}</p>
+            <button mat-raised-button (click)="loginToMsad()" color="primary" class="loginBtn">{{ isLoggedIn ?
+                'CONTINUE' :
+                'LOGIN'}}</button>
+        </mat-card-content>
+    </mat-card>
+
+</div>
