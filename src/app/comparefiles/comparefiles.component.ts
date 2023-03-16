@@ -63,7 +63,7 @@ export class ComparefilesComponent implements OnInit {
   }
   onfactorychange(event: any) {
 
-    console.log("fbdjlllll", event.value)
+    // console.log("fbdjlllll", event.value)
   }
   getFactorylist() {
     this.isLoader = true;
@@ -78,7 +78,7 @@ export class ComparefilesComponent implements OnInit {
         this.factoryData = res;
 
         this.factoryList = Object.keys(res);
-        console.log(this.factoryData[this.factoryList[0]], "ppppppppp")
+        // console.log(this.factoryData[this.factoryList[0]], "ppppppppp")
         // console.log(Object.keys(this.factoryList), "ffff");
         // console.log(res, "keys")
 
