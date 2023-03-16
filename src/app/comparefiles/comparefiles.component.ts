@@ -167,7 +167,7 @@ export class ComparefilesComponent implements OnInit {
       "saveToSentItems": "false"
     }
     this.httpService.post('https://graph.microsoft.com/v1.0/madhuri.jijjarapu@carbynetech.com/sendMail', body, headers).subscribe((res: any) => {
-      console.log(res)
+      // console.log(res)
     })
 
     // var require: any;
