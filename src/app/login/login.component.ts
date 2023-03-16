@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+// import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { NavigationEnd, Router } from '@angular/router';
 import { MsAdalAngular6Service } from 'microsoft-adal-angular6';
 // import { messages } from '../config/messages';
@@ -16,14 +17,14 @@ export class LoginComponent {
   // required = messages.fieldRequiredMsg;
 
   loginUser: any;
-  loginForm: UntypedFormGroup;
+  loginForm: FormGroup;
   isSubmitted = false;
   msadService: any;
   isLoggedIn: boolean = false;
 
 
 
-  constructor(private fb: UntypedFormBuilder, private adalSvc: MsAdalAngular6Service, private router: Router) {
+  constructor(private fb: FormBuilder, private adalSvc: MsAdalAngular6Service, private router: Router) {
     this.loginForm = this.fb.group({
       username: ['', Validators.required],
       password: ['', Validators.required]
