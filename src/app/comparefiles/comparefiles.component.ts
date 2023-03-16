@@ -33,7 +33,7 @@ export class ComparefilesComponent implements OnInit {
 
     if (this.landscape != '' || this.typeOfFactory != '') {
       this.islandscape = true;
-      console.log('kitekitekitekietekierelkitekitekitekitekite')
+      // console.log('kitekitekitekietekierelkitekitekitekitekite')
     }
 
   }
