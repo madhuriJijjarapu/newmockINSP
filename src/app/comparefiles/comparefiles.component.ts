@@ -91,17 +91,17 @@ export class ComparefilesComponent implements OnInit {
   }
   sapupload(event: any) {
     this.sapExtractFile = event.target.files[0].name
-    console.log(event, "eee")
+    // console.log(event, "eee")
   }
   fetchQOneExtract() {
     this.isLoader = true;
 
     let body = new FormData();
     body.append('factoryname', this.factoryData[this.factoryselection])
-    console.log("res")
+    // console.log("res")
 
     this.httpService.post('data_extract', body).subscribe((res: any) => {
-      console.log(res, "rrrrrrr")
+      // console.log(res, "rrrrrrr")
       if (res) {
         this.isLoader = false;
 
